@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Password Generator</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Password Generator</h1>
+    
+    <div class="settings">
+      <label for="length">Password Length: </label>
+      <input type="range" id="length" min="8" max="64" value="16">
+      <span id="length-value">16</span>
+      
+      <div>
+        <input type="checkbox" id="uppercase"> <label for="uppercase">Include Uppercase</label>
+      </div>
+      <div>
+        <input type="checkbox" id="lowercase" checked> <label for="lowercase">Include Lowercase</label>
+      </div>
+      <div>
+        <input type="checkbox" id="numbers" checked> <label for="numbers">Include Numbers</label>
+      </div>
+      <div>
+        <input type="checkbox" id="special" checked> <label for="special">Include Special Characters</label>
+      </div>
+      <div>
+        <input type="checkbox" id="exclude-similar"> <label for="exclude-similar">Exclude Similar Characters (e.g. O vs 0)</label>
+      </div>
+      
+      <button id="generate">Generate Password</button>
+    </div>
+
+    <div class="output">
+      <input type="text" id="password-output" readonly>
+      <button id="copy">Copy</button>
+      <span id="strength"></span>
+    </div>
+    
+    <div class="passphrase-section">
+      <button id="generate-passphrase">Generate Passphrase</button>
+      <p id="passphrase-output"></p>
+    </div>
+    
+    <div class="history">
+      <h3>Recent Passwords</h3>
+      <ul id="history-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

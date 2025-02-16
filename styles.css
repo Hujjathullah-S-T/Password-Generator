@@ -1,0 +1,123 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background: #f1f1f1;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  .settings {
+    margin-bottom: 30px;
+  }
+  
+  label {
+    font-size: 14px;
+  }
+  
+  input[type="range"] {
+    width: 100%;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 8px;
+  }
+  
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+  #password-output {
+    width: 100%;
+    padding: 10px;
+    font-size: 18px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  #copy {
+    background-color: #007bff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  #copy:hover {
+    background-color: #0056b3;
+  }
+  
+  #strength {
+    display: block;
+    margin-top: 10px;
+    color: #777;
+  }
+  
+  .passphrase-section {
+    margin-top: 20px;
+  }
+  
+  #passphrase-output {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #444;
+  }
+  
+  .history {
+    margin-top: 30px;
+  }
+  
+  .history h3 {
+    font-size: 18px;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  li {
+    padding: 5px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+  }
+  
+  li:hover {
+    background: #e2e2e2;
+  }
+  
